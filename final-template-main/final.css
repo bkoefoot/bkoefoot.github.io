@@ -9,25 +9,49 @@
 .header {
 	height: auto;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
-	font-family: 'Georgia', serif;
+	font-family: 'Montserrat',sans-serif;
 	background-color: steelblue;
 	color:black;
 }
 h4 {
 	font-style: italic;
-	font-size: 40px;
-	font-family: 'Georgia', serif;
+	font-size: 60px;
+	font-family: 'Montserrat',sans-serif;
 }
 h3 {
+	{
+ 	border: 4px #ff0000;
+ 	float: none;
+ 	min-width: 90%;
+ 	margin-left: 10px;
+ 	margin-bottom: 30px;
+ 	margin-top: 30px;
+ }
+	font-family: 'Montserrat',sans-serif;
 	font-size: 30px;
 }
 p {
+	<style>
+.bordered {
+border: 2px #18a1cd;
+}
+</style>
+</head>
 	font-size: 20px;
-	font-family: 'Times New Roman', serif;
+	font-family: 'Montserrat',sans-serif;
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 img{
 	float: right;
 	margin-right: 5%;
@@ -37,6 +61,7 @@ img{
 @media only screen and (max-width: 767px)
 {
  .list {
+ 	border: 2px solid orange;
  	float: none;
  	min-width: 90%;
  	margin-left: 10px;
@@ -47,4 +72,20 @@ img{
  	min-width: 90%;
  	margin-right: 10px;
  }
+}
+h2 {
+	font-family: 'Montserrat',sans-serif;
+	font-size: 30px;
+}
+h1{ text-align:center; }
+list{font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.footer p { /* This is how you add styles for only the p text within the footer. */
+	background-color: steelblue;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 0;
 }

@@ -11,62 +11,109 @@
 		<!-- Link tag for CSS -->
 		<link rel="stylesheet" href="final.css">
 
-		<!-- Google font: Oswald -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 		
 	</head>
 		
 	<body>
 		<section class="header"> 
-			<h2> You won't believe what I learned in JNL 221 </h2>
-			<h4> Final Project <br>Brian Koefoot </h4>
+			<h2> JNL 221 Final
+ </h2>
+			<h4> How does a player’s xwOBA affect their contract’s average annual value? <br><br>Brian Koefoot </h4>
+			<svg width="60" height="60" fill="white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M18.961 19.169c-.233-.422-.443-.844-.636-1.265l.775-.285-.346-.938-.817.3c-.205-.531-.378-1.063-.516-1.595l.893-.181-.2-.98-.906.183c-.115-.635-.18-1.271-.2-1.908h.992v-1h-.985c.028-.634.102-1.269.223-1.906l.893.181.199-.98-.871-.177c.14-.527.31-1.056.513-1.587l.782.288.346-.938-.743-.273c.188-.419.393-.839.621-1.261 1.862 1.816 3.022 4.349 3.022 7.153 0 2.813-1.167 5.351-3.039 7.169m-12.33 1.257c.35-.609.65-1.219.922-1.831l1.102.405.345-.938-1.064-.392c.238-.627.442-1.256.6-1.887l1.071.217.199-.98-1.064-.216c.14-.766.22-1.534.241-2.304h1.017v-1h-1.023c-.03-.766-.119-1.533-.266-2.302l1.078-.218-.199-.98-1.093.222c-.16-.626-.358-1.252-.596-1.879l1.099-.404-.345-.939-1.135.418c-.268-.611-.564-1.222-.906-1.833 1.556-.999 3.402-1.585 5.386-1.585s3.83.586 5.386 1.585c-.341.611-.638 1.222-.905 1.833l-1.136-.418-.345.939 1.099.404c-.238.627-.436 1.253-.595 1.879l-1.094-.222-.199.98 1.077.218c-.146.769-.234 1.536-.265 2.302h-1.023v1h1.017c.021.77.1 1.538.241 2.304l-1.064.216.199.98 1.071-.217c.158.631.362 1.26.601 1.887l-1.065.392.345.938 1.102-.405c.272.612.573 1.222.922 1.831-1.553.991-3.391 1.574-5.369 1.574-1.977 0-3.816-.583-5.369-1.574m-4.631-8.426c0-2.804 1.161-5.337 3.023-7.153.227.421.432.842.62 1.261l-.742.273.345.938.783-.288c.203.531.373 1.06.512 1.587l-.871.177.199.98.893-.181c.121.637.196 1.272.224 1.906h-.986v1h.993c-.021.637-.086 1.273-.201 1.908l-.906-.183-.199.98.892.181c-.137.532-.311 1.064-.515 1.595l-.818-.3-.345.938.775.285c-.193.422-.403.843-.636 1.265-1.872-1.817-3.04-4.356-3.04-7.169m10-12c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12"/></svg>
 		</section>
 		<section>
-			<h3>This is my first subhed</h3>
+			<h3>Introduction</h3>
 			<!-- Add image below this comment -->
-			<img src="newhouse.jpg"alt="Aerial view of the Newhouse School"
+			<img src="wrigleyfield.jpg"alt="View of Wrigley Field"
 			width="400px"height="300px">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>In the MLB, there are many ways to track a player's performance throughout a season and even entire careers. The number one stat used is WAR, which means wins above replacement. This is how a player performs relative to the average player. A positive WAR means they are better, but a negative WAR means they are worse than the average. For this research, the stat used is xwOBA. This is a relatively new stat, because of the technology used to calculate the numbers. I decided to use this because it tells of the quality of contact, and how consistently players are putting together good at-bats.
+</p>
 		</section>
 		<section>
-			<h3>This is another subhed</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>Importance of Statistics</h3>
+			<p><a href="https://www.mlb.com/glossary/statcast/expected-woba?msockid=12f7e0f0ee956e4827e1f4c8eff26f5a"> 
+Expected Weighted On-base Average </a>(xwOBA) is formulated using exit velocity, launch angle, and, on certain types of batted balls, Sprint Speed. Knowing the expected outcomes of each individual batted ball from a particular player over the course of a season -- with a player's real-world data used for factors such as walks, strikeouts, and times hit by a pitch -- allows for the formation of said player's xwOBA based on the quality of contact, instead of the actual outcomes. Likewise, this exercise can be done for pitchers to get their expected xwOBA against. </p>
+
+<p>xwOBA is more indicative of a player's skill than regular wOBA, as xwOBA removes defense from the equation. Hitters, and likewise pitchers, are able to influence exit velocity and launch angle but have no control over what happens to a batted ball once it is put into play.
+</p>
+<p>
+The importance of stats in today’s MLB cannot be understated. Front offices across the league, utilize data to determine rosters and lineups daily. Sometimes, the decisions can go inning by inning based on pitcher matchups.</p>
+
+<p><a href="https://falk.syr.edu/people/paul-rodney/">Dr. Rodney Paul</a>, the director and professor of the sports analytics department at Syracuse University and the faculty advisor to the baseball statistics and sabermetrics club explains the depth of data.</p>
+
+<p>“The data could really be valuable on many, many different areas. Some might be at a really, really micro level for very just, you know, small individual things, you know, moving an outfielder around, as to hitting tendencies. Other things could really relate to, you know, really big contract issues,” he said.</p>
+
+<p>For this research project, I took the MVP of the American League and the National League over the course of the last five MLB seasons minus the Covid-19 2020 season, as well as top performers, and found their average xwOBA and current contract. The goal of the project was to determine if a player’s xwOBA influences the contract they receive. </p>
+
+
 		</section>
 		<section>
-			<div class="list">
-				<h2>Top refugee cities in the U.S.</h2>
-				<ul>
-					<li>Chicago</li>
-					<li>Phoenix</li>
-					<li>Houston</li>
-					<li>Boston</li>
-				</ul>
-			</div>
+			
 
 			<!-- Add responsive Datawrapper element below this comment. -->
-			<iframe title="Average Xwoba per Age" aria-label="Interactive line chart" id="datawrapper-chart-iejpB" src="https://datawrapper.dwcdn.net/iejpB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="460" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+			<iframe title="MLB xwoba Leaders over the last 5 years excluding covid" aria-label="Column Chart" id="datawrapper-chart-AMgIH" src="https://datawrapper.dwcdn.net/AMgIH/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="497" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+			<iframe title="MLB Players Average Annual Value" aria-label="Column Chart" id="datawrapper-chart-oXqg2" src="https://datawrapper.dwcdn.net/oXqg2/7/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="505" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+</script>
 </script>
 		</section>
 		<section>
-			<h3>This is my final subhed</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>Findings</h3>
+			<p>Analyzing these two graphs there is no correlation between xwOBA and average annual value. There are a few reasons why there is no correlation.</p>
 		</section>
+
+				 <title>Bordered List</title>
+    <style>
+        /* Style the list container */
+        .bordered-list {
+            border: 10px solid #ff0000; /* Border around the entire list */
+            padding: 25px;          /* Space inside the border */
+            margin: 20px auto;      /* Centered margin */
+            width: 300px;           /* Fixed width */
+            border-radius: 8px;     /* Optional: Rounded corners */
+            background-color: #f9f9f9; /* Light background */
+        }
+
+        /* Style the list items */
+        .bordered-list li {
+            border-bottom: 1px solid #ddd; /* Border between items */
+            padding: 8px;                 /* Space inside each item */
+            list-style-type: upper-alpha;        /* Removes default list bullets */
+        }
+
+        /* Remove the border from the last item */
+        .bordered-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reasons why </h1>
+    <ul class="bordered-list">
+        <li>Position</li>
+		<li>Date the contract was signed and the age of the player</li>
+		<li>Underperforming or overperforming</li>
+    </ul>
+</body>
+			</div>
+			<p>The position factor impacts mostly two players in the charts. The first player is Shohei Ohtani who is a two-way player. A player who can throw upper-90s with movement as well as be a top hitter in baseball will command much more in free agency than the rest of the league, who can only hit. Although Ohtani could not pitch last season due to injury, he still won NL MVP for being a designated hitter. His 70 million AAV is head and shoulders above the rest because of his once-in-a-generation talent. The second player impacted is Yordan Alvarez. He is the only person on this list whose main position is designated hitter for more than one season. His value is lower because of his one-dimensional aspect of the game, which he does exceptionally well. 
+
+<br><br>Another factor that plays into a player's AAV is the date the player's contract was signed as well as the age of the player. In 2019, Bryce Harper’s contract was the largest in MLB history. Now, that contract is relatively small compared to the rest on the list. Ronald Acuna Jr. also signed his contract in 2019 before he won the NL MVP. On the other side of the spectrum, Juan Soto signed a 51 million dollar AAV contract in early December 2024 at the age of 26. The age and the year the contract was signed could alter the correlation between xwOBA and AAV.</p>
+
+<p>The third factor that alters the correlation between xwOBA and AAV is a player's performance. A player could have an excellent season, and then sign a large deal and not play up to the standard. A player who demonstrated this is Cody Bellinger. Bellinger won MVP in 2019 for the Dodgers. After a couple of rocky seasons and injuries, he had a good season with the Cubs in 2023. He signed a 26.7 AAV contract in hopes he could continue his form or better yet, return to his MVP form. His xwOBA is dominated by two good years, which led to his large contract. A player who overperformed is Ronald Acuna Jr. and Yordan Alvarez. Acuna signed a deal early in his career, because of the way the Braves do business. They sign young players to large deals before they hopefully hit their prime. Alvarez overperformed as well, but not for the reason Acuna had. He was paid for being only a hitter and did an outstanding job.</p>
+
+<p>Acuna’s outperformance of his contract is not a surprise. He won Rookie of the Year over players like Soto and won MVP in 2023. Alvarez has snuck under the radar as a monster hitter because of the team he plays for. Dr. Rodney Paul said it perfectly with the attention Alvarez receives.</p>
+
+<p>“If you're in New York City, you get a whole lot more attention than you do with Houston… I think that sometimes changes the value in the fans mind just because you don't, you don't hear about the players as much,” he said.</p>
+
+<p>For casual fans, these stats may be a surprise. For hardcore MLB fans, they are not. The findings from the data show there is no correlation between xwOBA and AAV. Only time will tell what the next generation of players will get in upcoming free agency periods.</p>
+
 		<div class="footer">
-			<p>This page was built in by Prof. Jon Glass for JNL221 at Syracuse University. Fonts used: Georgia, Oswald.</p>
+			<p>This page was built in by Prof. Jon Glass for JNL221 at Syracuse University.</p>
 		</div>
 	</body>
 </html>
